@@ -1,0 +1,1366 @@
+// Consultas de insersión //
+
+
+db.Libros.insertOne({
+  "titulo": "El poder del ahora",
+  "autor": "Eckhart Tolle",
+  "genero": "Espiritualidad",
+  "precio": 35000,
+  "cantidad_disponible": 30,
+  "fecha_publicacion": "1997-01-01",
+  "editorial": "Editorial Gaia",
+  "isbn": "978-8484450895",
+  "descripcion": "Un libro que enseña a vivir en el presente y encontrar la paz interior."
+});
+
+db.Libros.insertMany([
+  {
+    "titulo": "La sombra del viento",
+    "autor": "Carlos Ruiz Zafón",
+    "genero": "Ficción",
+    "precio": 42000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "2001-01-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-8408045828",
+    "descripcion": "Una novela llena de misterio y pasión que explora el destino de un libro olvidado."
+  },
+  {
+    "titulo": "El código Da Vinci",
+    "autor": "Dan Brown",
+    "genero": "Suspense",
+    "precio": 50000,
+    "cantidad_disponible": 40,
+    "fecha_publicacion": "2003-01-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-0307474278",
+    "descripcion": "Un thriller de misterio que combina arte, historia y religión en un juego de pistas."
+  }
+]);
+
+db.Libros.insertMany ([
+
+  {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 50000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1967-05-30",
+    "editorial": "Penguin Random House",
+    "isbn": "978-0307474728",
+    "descripcion": "Obra maestra de la literatura hispanoamericana que narra la historia de la familia Buendía."
+  },
+  {
+    "titulo": "El amor en los tiempos del cólera",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 40000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1985-09-06",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307389732",
+    "descripcion": "Una historia de amor que atraviesa décadas, ambientada en el Caribe colombiano."
+  },
+  {
+    "titulo": "El olvido que seremos",
+    "autor": "Héctor Abad Faciolince",
+    "genero": "Memorias",
+    "precio": 45000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2006-09-01",
+    "editorial": "Alfaguara",
+    "isbn": "978-9587048626",
+    "descripcion": "Relato íntimo y conmovedor sobre la vida y muerte del padre del autor."
+  },
+  {
+    "titulo": "Delirio",
+    "autor": "Laura Restrepo",
+    "genero": "Novela",
+    "precio": 38000,
+    "cantidad_disponible": 10,
+    "fecha_publicacion": "2004-05-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-8432217854",
+    "descripcion": "Historia de amor y locura en la Colombia contemporánea."
+  },
+  {
+    "titulo": "La casa de los espíritus",
+    "autor": "Isabel Allende",
+    "genero": "Realismo mágico",
+    "precio": 55000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1982-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-8497596826",
+    "descripcion": "Una saga familiar cargada de historia y magia."
+  },
+  {
+    "titulo": "El coronel no tiene quien le escriba",
+    "autor": "Gabriel García Márquez",
+    "genero": "Cuento",
+    "precio": 20000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1961-10-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-8437604949",
+    "descripcion": "Historia de un coronel que espera una pensión que nunca llega."
+  },
+  {
+    "titulo": "Rosario Tijeras",
+    "autor": "Jorge Franco",
+    "genero": "Novela",
+    "precio": 37000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1999-07-01",
+    "editorial": "Alfaguara",
+    "isbn": "978-9587049401",
+    "descripcion": "Un retrato de la violencia y la pasión en Medellín."
+  },
+  {
+    "titulo": "La vorágine",
+    "autor": "José Eustasio Rivera",
+    "genero": "Novela",
+    "precio": 29000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1924-11-01",
+    "editorial": "Editorial Norma",
+    "isbn": "978-9580460319",
+    "descripcion": "Un viaje al corazón de la selva amazónica colombiana."
+  },
+  {
+    "titulo": "María",
+    "autor": "Jorge Isaacs",
+    "genero": "Novela romántica",
+    "precio": 25000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "1867-01-01",
+    "editorial": "Editorial Norma",
+    "isbn": "978-9580470868",
+    "descripcion": "Una de las obras cumbres de la literatura romántica colombiana."
+  },
+  {
+    "titulo": "Pedro Páramo",
+    "autor": "Juan Rulfo",
+    "genero": "Novela",
+    "precio": 35000,
+    "cantidad_disponible": 17,
+    "fecha_publicacion": "1955-01-01",
+    "editorial": "Fondo de Cultura Económica",
+    "isbn": "978-8437604940",
+    "descripcion": "Una obra maestra del realismo mágico."
+  },
+  {
+    "titulo": "Sin tetas no hay paraíso",
+    "autor": "Gustavo Bolívar",
+    "genero": "Novela",
+    "precio": 42000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "2006-03-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-9584203578",
+    "descripcion": "Historia de una joven en un mundo de narcotráfico y superficialidad."
+  },
+  {
+    "titulo": "Relato de un náufrago",
+    "autor": "Gabriel García Márquez",
+    "genero": "Crónica",
+    "precio": 23000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1955-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474728",
+    "descripcion": "La narración de un náufrago que sobrevivió diez días en alta mar."
+  },
+  {
+    "titulo": "Cómeme si te atreves",
+    "autor": "Daniel Samper Pizano",
+    "genero": "Humor",
+    "precio": 35000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2015-01-01",
+    "editorial": "Alfaguara",
+    "isbn": "978-9580428685",
+    "descripcion": "Una colección de columnas humorísticas sobre la vida cotidiana."
+  },
+  {
+    "titulo": "El ruido de las cosas al caer",
+    "autor": "Juan Gabriel Vásquez",
+    "genero": "Novela",
+    "precio": 47000,
+    "cantidad_disponible": 16,
+    "fecha_publicacion": "2011-06-01",
+    "editorial": "Alfaguara",
+    "isbn": "978-9580428738",
+    "descripcion": "Una novela que explora la historia reciente de Colombia."
+  },
+  {
+    "titulo": "Manual para ser niño",
+    "autor": "Yolanda Reyes",
+    "genero": "Infantil",
+    "precio": 28000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "2016-01-01",
+    "editorial": "Babel Libros",
+    "isbn": "978-9585963494",
+    "descripcion": "Una guía para disfrutar la niñez en su plenitud."
+  },
+  {
+    "titulo": "La rebelión de las ratas",
+    "autor": "Fernando Soto Aparicio",
+    "genero": "Novela",
+    "precio": 30000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1962-01-01",
+    "editorial": "Editorial Norma",
+    "isbn": "978-9580480873",
+    "descripcion": "La historia de los trabajadores en una mina y su lucha por la justicia."
+  },
+  {
+    "titulo": "Cazadores de microbios",
+    "autor": "Paul de Kruif",
+    "genero": "Ciencia",
+    "precio": 40000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1926-01-01",
+    "editorial": "Editorial Norma",
+    "isbn": "978-9580481214",
+    "descripcion": "Un relato sobre el descubrimiento de los microorganismos."
+  },
+  {
+    "titulo": "Memorias de mis putas tristes",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 38000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "2004-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307389732",
+    "descripcion": "Historia de un anciano periodista que descubre el amor verdadero."
+  },
+    {
+    "titulo": "Los ejércitos",
+    "autor": "Evelio Rosero",
+    "genero": "Novela",
+    "precio": 36000,
+    "cantidad_disponible": 14,
+    "fecha_publicacion": "2007-08-01",
+    "editorial": "Tusquets Editores",
+    "isbn": "978-8483104348",
+    "descripcion": "Relato sobre los horrores de la guerra civil en una aldea colombiana."
+  },
+  {
+    "titulo": "La hojarasca",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 29000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1955-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474728",
+    "descripcion": "Primera novela de García Márquez, una metáfora sobre la vida y la muerte en Macondo."
+  },  
+  {
+    "titulo": "Doce cuentos peregrinos",
+    "autor": "Gabriel García Márquez",
+    "genero": "Cuento",
+    "precio": 32000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1992-11-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474729",
+    "descripcion": "Una colección de cuentos que exploran la vida de latinoamericanos en Europa."
+  },
+  {
+    "titulo": "Satanás",
+    "autor": "Mario Mendoza",
+    "genero": "Novela",
+    "precio": 45000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "2002-03-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-9584203515",
+    "descripcion": "Una historia que mezcla realidad y ficción en el contexto de un crimen real en Bogotá."
+  },
+  {
+    "titulo": "País de plomo",
+    "autor": "Alonso Salazar",
+    "genero": "Crónica",
+    "precio": 38000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "1997-01-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-9584203516",
+    "descripcion": "Un retrato de la violencia en Medellín durante el auge del narcotráfico."
+  },
+  {
+    "titulo": "El día que se perdió la cordura",
+    "autor": "Javier Castillo",
+    "genero": "Thriller",
+    "precio": 47000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "2018-03-01",
+    "editorial": "Suma de Letras",
+    "isbn": "978-8491291406",
+    "descripcion": "Un thriller psicológico que atrapa desde la primera página."
+  },
+  {
+    "titulo": "La escuela de la vida",
+    "autor": "Alain de Botton",
+    "genero": "Filosofía",
+    "precio": 50000,
+    "cantidad_disponible": 10,
+    "fecha_publicacion": "2020-01-01",
+    "editorial": "Editorial Taurus",
+    "isbn": "978-6073167088",
+    "descripcion": "Una reflexión sobre cómo abordar los problemas cotidianos de la vida."
+  },
+  {
+    "titulo": "La sombra del viento",
+    "autor": "Carlos Ruiz Zafón",
+    "genero": "Novela",
+    "precio": 52000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "2001-04-01",
+    "editorial": "Planeta",
+    "isbn": "978-8408172178",
+    "descripcion": "Un libro sobre libros, ambientado en la Barcelona de posguerra."
+  },
+  {
+    "titulo": "El alquimista",
+    "autor": "Paulo Coelho",
+    "genero": "Novela",
+    "precio": 34000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "1988-10-01",
+    "editorial": "Editorial Grijalbo",
+    "isbn": "978-9502810505",
+    "descripcion": "Una fábula sobre la búsqueda de los sueños y el destino personal."
+  },
+  {
+    "titulo": "Harry Potter y la piedra filosofal",
+    "autor": "J.K. Rowling",
+    "genero": "Fantasía",
+    "precio": 55000,
+    "cantidad_disponible": 50,
+    "fecha_publicacion": "1997-06-26",
+    "editorial": "Editorial Salamandra",
+    "isbn": "978-8478884452",
+    "descripcion": "La primera entrega de la famosa saga del joven mago."
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "genero": "Distopía",
+    "precio": 40000,
+    "cantidad_disponible": 40,
+    "fecha_publicacion": "1949-06-08",
+    "editorial": "Debolsillo",
+    "isbn": "978-8499890948",
+    "descripcion": "Una de las novelas distópicas más importantes de la literatura moderna."
+  },
+  {
+    "titulo": "Fahrenheit 451",
+    "autor": "Ray Bradbury",
+    "genero": "Distopía",
+    "precio": 39000,
+    "cantidad_disponible": 35,
+    "fecha_publicacion": "1953-10-19",
+    "editorial": "Simon & Schuster",
+    "isbn": "978-1451673319",
+    "descripcion": "Una obra que explora un futuro donde los libros están prohibidos."
+  },
+  {
+    "titulo": "Rayuela",
+    "autor": "Julio Cortázar",
+    "genero": "Novela",
+    "precio": 45000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1963-06-28",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-8466331145",
+    "descripcion": "Una obra icónica de la literatura latinoamericana que invita al lector a elegir su propio camino."
+  },
+  {
+    "titulo": "Crónica de una muerte anunciada",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 37000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1981-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307475497",
+    "descripcion": "Un relato basado en hechos reales, narrado con maestría."
+  },
+  {
+    "titulo": "Los días de la sombra",
+    "autor": "Sandra Lorenzano",
+    "genero": "Novela",
+    "precio": 42000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "2010-05-01",
+    "editorial": "Planeta",
+    "isbn": "978-6070705733",
+    "descripcion": "Un recorrido por las memorias de un pasado lleno de dolor y esperanza."
+  },
+  {
+    "titulo": "El túnel",
+    "autor": "Ernesto Sábato",
+    "genero": "Novela",
+    "precio": 30000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1948-01-01",
+    "editorial": "Editorial Seix Barral",
+    "isbn": "978-9507313926",
+    "descripcion": "Un relato psicológico sobre la obsesión y la soledad."
+  },
+  {
+    "titulo": "La fiesta del chivo",
+    "autor": "Mario Vargas Llosa",
+    "genero": "Novela histórica",
+    "precio": 52000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2000-10-01",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-8466312472",
+    "descripcion": "Un retrato de la dictadura de Rafael Trujillo en República Dominicana."
+  },
+  {
+    "titulo": "La ladrona de libros",
+    "autor": "Markus Zusak",
+    "genero": "Ficción histórica",
+    "precio": 47000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "2005-01-01",
+    "editorial": "Lumen",
+    "isbn": "978-0307473424",
+    "descripcion": "La historia de una niña en la Alemania nazi que encuentra consuelo en los libros."
+  },
+  {
+    "titulo": "El hombre en busca de sentido",
+    "autor": "Viktor Frankl",
+    "genero": "Psicología",
+    "precio": 39000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1946-01-01",
+    "editorial": "Herder Editorial",
+    "isbn": "978-8425430669",
+    "descripcion": "Un relato sobre la experiencia en los campos de concentración y el poder del propósito."
+  },
+  {
+    "titulo": "La metamorfosis",
+    "autor": "Franz Kafka",
+    "genero": "Novela",
+    "precio": 28000,
+    "cantidad_disponible": 40,
+    "fecha_publicacion": "1915-01-01",
+    "editorial": "Debolsillo",
+    "isbn": "978-8499890949",
+    "descripcion": "La transformación surrealista de un hombre en un insecto y sus consecuencias."
+  },
+  {
+    "titulo": "Ensayo sobre la ceguera",
+    "autor": "José Saramago",
+    "genero": "Novela",
+    "precio": 44000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1995-01-01",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-9707708704",
+    "descripcion": "Una alegoría sobre la sociedad y su reacción ante la adversidad."
+  },
+  {
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "genero": "Fábula",
+    "precio": 35000,
+    "cantidad_disponible": 50,
+    "fecha_publicacion": "1943-04-06",
+    "editorial": "Editorial Salamandra",
+    "isbn": "978-8498381493",
+    "descripcion": "Un clásico de la literatura que explora temas universales como la amistad y el amor."
+  },
+  {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 48000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1967-06-05",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474720",
+    "descripcion": "La obra cumbre del realismo mágico, que narra la historia de la familia Buendía."
+  },
+  {
+    "titulo": "Pedro Páramo",
+    "autor": "Juan Rulfo",
+    "genero": "Novela",
+    "precio": 35000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1955-01-01",
+    "editorial": "Fondo de Cultura Económica",
+    "isbn": "978-6071617332",
+    "descripcion": "Una de las grandes obras de la literatura mexicana, llena de realismo mágico."
+  },
+  {
+    "titulo": "Memoria de mis putas tristes",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 29000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "2004-10-01",
+    "editorial": "Random House Mondadori",
+    "isbn": "978-0307272821",
+    "descripcion": "La última novela publicada por García Márquez, un canto al amor y la vejez."
+  },
+  {
+    "titulo": "Travesuras de la niña mala",
+    "autor": "Mario Vargas Llosa",
+    "genero": "Novela",
+    "precio": 40000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2006-01-01",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-8466369537",
+    "descripcion": "Una historia de amor a lo largo de varias décadas y ciudades."
+  },
+  {
+    "titulo": "La casa de los espíritus",
+    "autor": "Isabel Allende",
+    "genero": "Novela",
+    "precio": 42000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1982-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-6073115461",
+    "descripcion": "La novela que lanzó a Isabel Allende al estrellato, llena de magia y política."
+  },
+  {
+    "titulo": "Hijos de la medianoche",
+    "autor": "Salman Rushdie",
+    "genero": "Novela histórica",
+    "precio": 45000,
+    "cantidad_disponible": 10,
+    "fecha_publicacion": "1981-01-01",
+    "editorial": "Debolsillo",
+    "isbn": "978-6073120212",
+    "descripcion": "Una obra maestra que combina historia, política y realismo mágico."
+  },
+  {
+    "titulo": "Siddhartha",
+    "autor": "Hermann Hesse",
+    "genero": "Novela filosófica",
+    "precio": 31000,
+    "cantidad_disponible": 35,
+    "fecha_publicacion": "1922-01-01",
+    "editorial": "Editorial Alianza",
+    "isbn": "978-8420675799",
+    "descripcion": "Una exploración espiritual de la búsqueda del sentido de la vida."
+  },
+  {
+    "titulo": "El amor en los tiempos del cólera",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 46000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1985-01-01",
+    "editorial": "Editorial Oveja Negra",
+    "isbn": "978-0307474721",
+    "descripcion": "Una de las historias de amor más icónicas de la literatura universal."
+  },
+  {
+    "titulo": "La ciudad y los perros",
+    "autor": "Mario Vargas Llosa",
+    "genero": "Novela",
+    "precio": 37000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1963-01-01",
+    "editorial": "Editorial Seix Barral",
+    "isbn": "978-8432206253",
+    "descripcion": "Una obra fundamental sobre la juventud y la disciplina militar."
+  },
+  {
+    "titulo": "La colmena",
+    "autor": "Camilo José Cela",
+    "genero": "Novela",
+    "precio": 35000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1951-01-01",
+    "editorial": "Editorial Austral",
+    "isbn": "978-8467033239",
+    "descripcion": "Una representación cruda de la sociedad española después de la Guerra Civil."
+  },
+  {
+    "titulo": "Confieso que he vivido",
+    "autor": "Pablo Neruda",
+    "genero": "Memorias",
+    "precio": 38000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1974-01-01",
+    "editorial": "Editorial Seix Barral",
+    "isbn": "978-8432208134",
+    "descripcion": "Un repaso autobiográfico por la vida y obra de uno de los poetas más importantes del siglo XX."
+  },
+  {
+    "titulo": "El coronel no tiene quien le escriba",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 30000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1961-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474722",
+    "descripcion": "La historia de un coronel en la espera interminable de una carta que nunca llega."
+  },
+  {
+    "titulo": "Las venas abiertas de América Latina",
+    "autor": "Eduardo Galeano",
+    "genero": "Ensayo",
+    "precio": 42000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1971-01-01",
+    "editorial": "Siglo XXI Editores",
+    "isbn": "978-9682316791",
+    "descripcion": "Un análisis histórico y político de la explotación de América Latina."
+  },
+  {
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes Saavedra",
+    "genero": "Novela",
+    "precio": 68000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1605-01-01",
+    "editorial": "Editorial Espasa",
+    "isbn": "978-8467033246",
+    "descripcion": "La obra maestra de la literatura española que narra las aventuras de un hidalgo loco por la caballería."
+  },
+  {
+    "titulo": "De animales a dioses: Breve historia de la humanidad",
+    "autor": "Yuval Noah Harari",
+    "genero": "Ensayo",
+    "precio": 55000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "2014-01-01",
+    "editorial": "Debate",
+    "isbn": "978-6073193728",
+    "descripcion": "Un análisis sobre la evolución de la humanidad desde sus orígenes hasta el presente."
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "genero": "Distopía",
+    "precio": 40000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1949-01-01",
+    "editorial": "Debolsillo",
+    "isbn": "978-6073193698",
+    "descripcion": "Un retrato distópico de un futuro gobernado por un estado totalitario."
+  },
+  {
+    "titulo": "La insoportable levedad del ser",
+    "autor": "Milan Kundera",
+    "genero": "Novela",
+    "precio": 47000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1984-01-01",
+    "editorial": "Editorial Tusquets",
+    "isbn": "978-8483831344",
+    "descripcion": "Un análisis filosófico sobre el amor, la política y la existencia humana."
+  },
+  {
+    "titulo": "La Biblia de los caídos",
+    "autor": "Fernando Trujillo Sanz",
+    "genero": "Fantasía",
+    "precio": 45000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2011-01-01",
+    "editorial": "Createspace Independent Publishing",
+    "isbn": "978-1467988086",
+    "descripcion": "Un relato oscuro y lleno de misterio en un mundo sobrenatural."
+  },
+  {
+    "titulo": "El extranjero",
+    "autor": "Albert Camus",
+    "genero": "Filosofía",
+    "precio": 36000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1942-01-01",
+    "editorial": "Editorial Gallimard",
+    "isbn": "978-8420676239",
+    "descripcion": "Una novela filosófica que explora el absurdo y la existencia."
+  },
+  {
+    "titulo": "En el camino",
+    "autor": "Jack Kerouac",
+    "genero": "Novela",
+    "precio": 41000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1957-01-01",
+    "editorial": "Editorial Anagrama",
+    "isbn": "978-8433966629",
+    "descripcion": "Una obra clave de la generación Beat, sobre la libertad y la búsqueda de identidad."
+  },  
+   {
+    "titulo": "Confieso que he vivido",
+    "autor": "Pablo Neruda",
+    "genero": "Memorias",
+    "precio": 38000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1974-01-01",
+    "editorial": "Editorial Seix Barral",
+    "isbn": "978-8432208134",
+    "descripcion": "Un repaso autobiográfico por la vida y obra de uno de los poetas más importantes del siglo XX."
+  },
+  {
+    "titulo": "El coronel no tiene quien le escriba",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 30000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1961-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474722",
+    "descripcion": "La historia de un coronel en la espera interminable de una carta que nunca llega."
+  },
+  {
+    "titulo": "Las venas abiertas de América Latina",
+    "autor": "Eduardo Galeano",
+    "genero": "Ensayo",
+    "precio": 42000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1971-01-01",
+    "editorial": "Siglo XXI Editores",
+    "isbn": "978-9682316791",
+    "descripcion": "Un análisis histórico y político de la explotación de América Latina."
+  },
+  {
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes Saavedra",
+    "genero": "Novela",
+    "precio": 68000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1605-01-01",
+    "editorial": "Editorial Espasa",
+    "isbn": "978-8467033246",
+    "descripcion": "La obra maestra de la literatura española que narra las aventuras de un hidalgo loco por la caballería."
+  },
+  {
+    "titulo": "De animales a dioses: Breve historia de la humanidad",
+    "autor": "Yuval Noah Harari",
+    "genero": "Ensayo",
+    "precio": 55000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "2014-01-01",
+    "editorial": "Debate",
+    "isbn": "978-6073193728",
+    "descripcion": "Un análisis sobre la evolución de la humanidad desde sus orígenes hasta el presente."
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "genero": "Distopía",
+    "precio": 40000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1949-01-01",
+    "editorial": "Debolsillo",
+    "isbn": "978-6073193698",
+    "descripcion": "Un retrato distópico de un futuro gobernado por un estado totalitario."
+  },
+  {
+    "titulo": "La insoportable levedad del ser",
+    "autor": "Milan Kundera",
+    "genero": "Novela",
+    "precio": 47000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1984-01-01",
+    "editorial": "Editorial Tusquets",
+    "isbn": "978-8483831344",
+    "descripcion": "Un análisis filosófico sobre el amor, la política y la existencia humana."
+  },
+  {
+    "titulo": "La Biblia de los caídos",
+    "autor": "Fernando Trujillo Sanz",
+    "genero": "Fantasía",
+    "precio": 45000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2011-01-01",
+    "editorial": "Createspace Independent Publishing",
+    "isbn": "978-1467988086",
+    "descripcion": "Un relato oscuro y lleno de misterio en un mundo sobrenatural."
+  },
+  {
+    "titulo": "El extranjero",
+    "autor": "Albert Camus",
+    "genero": "Filosofía",
+    "precio": 36000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1942-01-01",
+    "editorial": "Editorial Gallimard",
+    "isbn": "978-8420676239",
+    "descripcion": "Una novela filosófica que explora el absurdo y la existencia."
+  },
+  {
+    "titulo": "En el camino",
+    "autor": "Jack Kerouac",
+    "genero": "Novela",
+    "precio": 41000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1957-01-01",
+    "editorial": "Editorial Anagrama",
+    "isbn": "978-8433966629",
+    "descripcion": "Una obra clave de la generación Beat, sobre la libertad y la búsqueda de identidad."
+  },
+  {
+    "titulo": "Fahrenheit 451",
+    "autor": "Ray Bradbury",
+    "genero": "Distopía",
+    "precio": 39000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1953-10-19",
+    "editorial": "Simon & Schuster",
+    "isbn": "978-1451673319",
+    "descripcion": "Un clásico distópico que reflexiona sobre la censura y el poder de los libros."
+  },
+  {
+    "titulo": "El nombre de la rosa",
+    "autor": "Umberto Eco",
+    "genero": "Misterio",
+    "precio": 52000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1980-01-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-8467033260",
+    "descripcion": "Un thriller medieval lleno de intrigas, asesinatos y debates filosóficos."
+  },
+  {
+    "titulo": "La sombra del viento",
+    "autor": "Carlos Ruiz Zafón",
+    "genero": "Novela",
+    "precio": 47000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "2001-01-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-8408181926",
+    "descripcion": "La historia de un joven atrapado en el misterio de un libro maldito."
+  },
+  {
+    "titulo": "El Hobbit",
+    "autor": "J.R.R. Tolkien",
+    "genero": "Fantasía",
+    "precio": 45000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "1937-09-21",
+    "editorial": "Minotauro",
+    "isbn": "978-0261102217",
+    "descripcion": "Las aventuras de Bilbo Bolsón en un mundo de fantasía épica."
+  },
+  {
+    "titulo": "Drácula",
+    "autor": "Bram Stoker",
+    "genero": "Terror",
+    "precio": 34000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1897-01-01",
+    "editorial": "Penguin Classics",
+    "isbn": "978-0141439846",
+    "descripcion": "El clásico relato del vampiro más famoso de la literatura."
+  },
+  {
+    "titulo": "El lobo estepario",
+    "autor": "Hermann Hesse",
+    "genero": "Filosofía",
+    "precio": 37000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1927-01-01",
+    "editorial": "Editorial Alianza",
+    "isbn": "978-8420677441",
+    "descripcion": "Un viaje introspectivo sobre la dualidad del alma humana."
+  },
+  {
+    "titulo": "Cumbres borrascosas",
+    "autor": "Emily Brontë",
+    "genero": "Romance",
+    "precio": 42000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1847-01-01",
+    "editorial": "Penguin Classics",
+    "isbn": "978-0141439556",
+    "descripcion": "Una trágica historia de amor y venganza en los páramos ingleses."
+  },
+  {
+    "titulo": "La guerra del fin del mundo",
+    "autor": "Mario Vargas Llosa",
+    "genero": "Novela histórica",
+    "precio": 46000,
+    "cantidad_disponible": 16,
+    "fecha_publicacion": "1981-01-01",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-8467033277",
+    "descripcion": "Una épica narración basada en un conflicto real en Brasil."
+  },
+  {
+    "titulo": "Anna Karenina",
+    "autor": "León Tolstói",
+    "genero": "Novela",
+    "precio": 60000,
+    "cantidad_disponible": 10,
+    "fecha_publicacion": "1877-01-01",
+    "editorial": "Alianza Editorial",
+    "isbn": "978-8420677748",
+    "descripcion": "Una de las grandes obras de la literatura rusa que explora el amor y la moralidad."
+  },
+  {
+    "titulo": "El camino de los reyes",
+    "autor": "Brandon Sanderson",
+    "genero": "Fantasía",
+    "precio": 65000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "2010-08-31",
+    "editorial": "Tor Books",
+    "isbn": "978-0765326355",
+    "descripcion": "El inicio de una épica saga fantástica en el mundo de Roshar."
+  },
+  {
+    "titulo": "Crónica de una muerte anunciada",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 32000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1981-01-01",
+    "editorial": "Editorial Oveja Negra",
+    "isbn": "978-0307387137",
+    "descripcion": "La historia de un asesinato anunciado que nadie pudo evitar."
+  },
+  {
+    "titulo": "Madame Bovary",
+    "autor": "Gustave Flaubert",
+    "genero": "Novela",
+    "precio": 38000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1857-01-01",
+    "editorial": "Penguin Classics",
+    "isbn": "978-0140449129",
+    "descripcion": "La trágica vida de Emma Bovary, atrapada entre sus sueños y la realidad."
+  },
+  {
+    "titulo": "Ensayo sobre la ceguera",
+    "autor": "José Saramago",
+    "genero": "Novela",
+    "precio": 40000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1995-01-01",
+    "editorial": "Alfaguara",
+    "isbn": "978-6073120681",
+    "descripcion": "Una alegoría sobre la ceguera social y moral de la humanidad."
+  },
+  {
+    "titulo": "La montaña mágica",
+    "autor": "Thomas Mann",
+    "genero": "Novela",
+    "precio": 55000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1924-01-01",
+    "editorial": "Editorial Seix Barral",
+    "isbn": "978-8432207839",
+    "descripcion": "Una obra maestra que explora el tiempo, la enfermedad y la muerte."
+  },
+  {
+    "titulo": "El guardián entre el centeno",
+    "autor": "J.D. Salinger",
+    "genero": "Novela",
+    "precio": 37000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "1951-01-01",
+    "editorial": "Little, Brown and Company",
+    "isbn": "978-0316769488",
+    "descripcion": "La historia de Holden Caulfield, un adolescente rebelde en Nueva York."
+  },
+  {
+    "titulo": "El perfume: Historia de un asesino",
+    "autor": "Patrick Süskind",
+    "genero": "Novela",
+    "precio": 42000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1985-01-01",
+    "editorial": "Debolsillo",
+    "isbn": "978-8497596824",
+    "descripcion": "La fascinante y oscura vida de un perfumista obsesionado con crear la fragancia perfecta."
+  },
+  {
+    "titulo": "El hombre en busca de sentido",
+    "autor": "Viktor Frankl",
+    "genero": "Psicología",
+    "precio": 35000,
+    "cantidad_disponible": 28,
+    "fecha_publicacion": "1946-01-01",
+    "editorial": "Herder Editorial",
+    "isbn": "978-8425432120",
+    "descripcion": "Las reflexiones de un sobreviviente del Holocausto sobre la búsqueda de significado."
+  },
+  {
+    "titulo": "Rayuela",
+    "autor": "Julio Cortázar",
+    "genero": "Novela",
+    "precio": 48000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1963-01-01",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-8466350863",
+    "descripcion": "Una novela experimental que invita al lector a construir su propio recorrido."
+  },
+  {
+    "titulo": "El principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "genero": "Fábula",
+    "precio": 25000,
+    "cantidad_disponible": 50,
+    "fecha_publicacion": "1943-01-01",
+    "editorial": "Editorial Salamandra",
+    "isbn": "978-8498381498",
+    "descripcion": "Un clásico de la literatura infantil que reflexiona sobre la vida y la amistad."
+  },
+  {
+    "titulo": "El Aleph",
+    "autor": "Jorge Luis Borges",
+    "genero": "Cuentos",
+    "precio": 39000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "1949-01-01",
+    "editorial": "Editorial Alianza",
+    "isbn": "978-8420663215",
+    "descripcion": "Una colección de relatos que explora el infinito y lo fantástico."
+  },
+  {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "genero": "Realismo mágico",
+    "precio": 48000,
+    "cantidad_disponible": 40,
+    "fecha_publicacion": "1967-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-0307474728",
+    "descripcion": "La épica historia de la familia Buendía en el pueblo de Macondo."
+  },
+  {
+    "titulo": "La Metamorfosis",
+    "autor": "Franz Kafka",
+    "genero": "Ficción",
+    "precio": 32000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1915-01-01",
+    "editorial": "Editorial Alianza",
+    "isbn": "978-8420676796",
+    "descripcion": "La impactante transformación de Gregor Samsa en un insecto gigante."
+  },
+  {
+    "titulo": "Los miserables",
+    "autor": "Victor Hugo",
+    "genero": "Novela histórica",
+    "precio": 60000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1862-01-01",
+    "editorial": "Penguin Classics",
+    "isbn": "978-0140444308",
+    "descripcion": "Una obra maestra sobre la justicia, la redención y la condición humana."
+  },
+  {
+    "titulo": "El arte de la guerra",
+    "autor": "Sun Tzu",
+    "genero": "Filosofía",
+    "precio": 25000,
+    "cantidad_disponible": 35,
+    "fecha_publicacion": "500 a.C.",
+    "editorial": "Ediciones Obelisco",
+    "isbn": "978-8491112761",
+    "descripcion": "Un tratado clásico sobre estrategia militar aplicable a la vida moderna."
+  },
+  {
+    "titulo": "Orgullo y prejuicio",
+    "autor": "Jane Austen",
+    "genero": "Romance",
+    "precio": 34000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1813-01-01",
+    "editorial": "Penguin Classics",
+    "isbn": "978-0141439518",
+    "descripcion": "Una de las grandes novelas románticas de la literatura inglesa."
+  },
+  {
+    "titulo": "Memorias de mis putas tristes",
+    "autor": "Gabriel García Márquez",
+    "genero": "Novela",
+    "precio": 29000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "2004-01-01",
+    "editorial": "Editorial Mondadori",
+    "isbn": "978-0307278821",
+    "descripcion": "La historia de un anciano que busca el amor en su última etapa de vida."
+  },
+  {
+    "titulo": "Pedro Páramo",
+    "autor": "Juan Rulfo",
+    "genero": "Realismo mágico",
+    "precio": 30000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1955-01-01",
+    "editorial": "Editorial RM",
+    "isbn": "978-9685208786",
+    "descripcion": "Un joven viaja al pueblo de Comala para descubrir la verdad sobre su padre."
+  },
+  {
+    "titulo": "Las ciudades invisibles",
+    "autor": "Italo Calvino",
+    "genero": "Ficción",
+    "precio": 35000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1972-01-01",
+    "editorial": "Editorial Siruela",
+    "isbn": "978-8478443896",
+    "descripcion": "Un diálogo entre Marco Polo y Kublai Kan sobre ciudades imaginarias."
+  },
+  {
+    "titulo": "La historia interminable",
+    "autor": "Michael Ende",
+    "genero": "Fantasía",
+    "precio": 45000,
+    "cantidad_disponible": 20,
+    "fecha_publicacion": "1979-01-01",
+    "editorial": "Editorial Alfaguara",
+    "isbn": "978-8478886457",
+    "descripcion": "La aventura de Bastián en un mundo mágico llamado Fantasía."
+  },
+  {
+    "titulo": "Dune",
+    "autor": "Frank Herbert",
+    "genero": "Ciencia ficción",
+    "precio": 50000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1965-01-01",
+    "editorial": "Editorial Debolsillo",
+    "isbn": "978-0340960196",
+    "descripcion": "Una épica historia en un desierto galáctico lleno de intrigas políticas."
+  },
+  {
+    "titulo": "La casa de los espíritus",
+    "autor": "Isabel Allende",
+    "genero": "Realismo mágico",
+    "precio": 42000,
+    "cantidad_disponible": 22,
+    "fecha_publicacion": "1982-01-01",
+    "editorial": "Editorial Sudamericana",
+    "isbn": "978-6070737240",
+    "descripcion": "Una saga familiar llena de secretos y eventos sobrenaturales."
+  },
+  {
+    "titulo": "Los detectives salvajes",
+    "autor": "Roberto Bolaño",
+    "genero": "Novela",
+    "precio": 47000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1998-01-01",
+    "editorial": "Editorial Anagrama",
+    "isbn": "978-8433966780",
+    "descripcion": "La búsqueda de un poeta perdido en México y más allá."
+  },
+  {
+    "titulo": "La náusea",
+    "autor": "Jean-Paul Sartre",
+    "genero": "Filosofía",
+    "precio": 38000,
+    "cantidad_disponible": 12,
+    "fecha_publicacion": "1938-01-01",
+    "editorial": "Editorial Gallimard",
+    "isbn": "978-2070368056",
+    "descripcion": "Una novela existencialista que explora el sentido de la vida."
+  },
+  {
+    "titulo": "El señor de los anillos: La comunidad del anillo",
+    "autor": "J.R.R. Tolkien",
+    "genero": "Fantasía",
+    "precio": 60000,
+    "cantidad_disponible": 15,
+    "fecha_publicacion": "1954-07-29",
+    "editorial": "Minotauro",
+    "isbn": "978-0261102385",
+    "descripcion": "El inicio de la épica aventura para destruir el Anillo Único."
+  },
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "genero": "Distopía",
+    "precio": 45000,
+    "cantidad_disponible": 30,
+    "fecha_publicacion": "1949-01-01",
+    "editorial": "Editorial Debolsillo",
+    "isbn": "978-6073120643",
+    "descripcion": "Una novela sobre un futuro distópico gobernado por un estado totalitario."
+  },
+  {
+    "titulo": "El alquimista",
+    "autor": "Paulo Coelho",
+    "genero": "Ficción",
+    "precio": 28000,
+    "cantidad_disponible": 40,
+    "fecha_publicacion": "1988-01-01",
+    "editorial": "Editorial Planeta",
+    "isbn": "978-0061122415",
+    "descripcion": "La historia de un joven pastor que busca un tesoro en Egipto."
+  },
+  {
+    "titulo": "A sangre fría",
+    "autor": "Truman Capote",
+    "genero": "Crónica",
+    "precio": 39000,
+    "cantidad_disponible": 18,
+    "fecha_publicacion": "1966-01-01",
+    "editorial": "Random House",
+    "isbn": "978-0307388957",
+    "descripcion": "La crónica real de un asesinato que conmocionó a Estados Unidos."
+  },
+  {
+    "titulo": "El gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "genero": "Novela",
+    "precio": 36000,
+    "cantidad_disponible": 25,
+    "fecha_publicacion": "1925-01-01",
+    "editorial": "Scribner",
+    "isbn": "978-0743273565",
+    "descripcion": "Una mirada al sueño americano en los años 20."
+  },
+    {
+    "titulo": "Harry Potter y la piedra filosofal",
+    "autor": "J.K. Rowling",
+    "genero": "Fantasía",
+    "precio": 49000,
+    "cantidad_disponible": 50,
+    "fecha_publicacion": "1997-06-26",
+    "editorial": "Editorial Salamandra",
+    "isbn": "978-8478884453",
+    "descripcion": "El inicio de la saga de Harry Potter, un joven mago que descubre su destino en un mundo oculto."
+  }
+]);
+
+
+// Consultas de actualización //
+
+db.Libros.updateOne(
+  { "isbn": "978-0307474728" }, // Condición para la actualización 
+  { $set: { "precio": 52000, "cantidad_disponible": 18 } } // Campo o atributo a actualizar
+);
+
+
+db.Libros.updateMany(
+  { "autor": "Gabriel García Márquez" }, // Condición para la actualización
+  { $set: { "editorial": "Editorial Mondadori" } } // Campo o atributo a actualizar
+);
+
+
+// Consultas de selección //
+
+db.Libros.find(
+  { "genero": "Fantasía" } // Condición de búsqueda
+).toArray();
+
+
+db.Libros.find(
+  {
+    $and: [
+      { "editorial": "Editorial Planeta" },
+      { "precio": { $gt: 40000 } }
+    ]
+  }
+).toArray();
+
+
+// Consultas de eliminación //
+
+db.Libros.deleteOne({ "isbn": "978-0307474728" }); // Eliminar un solo documento
+
+db.Libros.deleteMany({ "autor": "Dan Brown" }); // Eliminar varios documentos
+
+
+// Operadores de comparación //
+
+db.Libros.find(
+  { "precio": { $gte: 40000 } } // Libros con precio mayor o igual a 40,000
+).toArray();
+
+db.Libros.find(
+  { "cantidad_disponible": { $lt: 20 } } // Libros con cantidad disponible menor a 20
+).toArray();
+
+
+
+// Filtros y operadores compuestos // 
+
+db.Libros.find(
+  { 
+    $or: [
+      { "genero": "Fantasía" }, 
+      { "genero": "Ciencia ficción" }
+    ],
+    "precio": { $gte: 30000, $lte: 50000 }
+  }
+).toArray();
+
+db.Libros.find(
+  { 
+    $and: [
+      { "isbn": { $exists: true } }, // El campo "isbn" debe existir
+      { "precio": { $gt: 35000 } }   // El precio debe ser mayor a 35,000
+    ]
+  }
+).toArray();
+
+
+//Consultas de agregación // 
+
+
+db.Libros.countDocuments(
+  { "genero": "Fantasía" } // Contar libros con el género "Fantasía"
+);
+
+db.Libros.countDocuments(
+  { 
+    $and: [
+      { "precio": { $gt: 40000 } }, // Contar libros cuyo precio es mayor a 40,000
+      { "cantidad_disponible": { $gte: 35 } } // y tienen al menos 35 unidades disponibles
+    ]
+  }
+);
+
+
+db.Libros.aggregate([
+  { $group: { _id: "$genero", total_precio: { $sum: "$precio" } } }
+]);
+
+
+db.Libros.aggregate([
+  { $match: { "autor": "Gabriel García Márquez" } },
+  { $group: { _id: "$autor", total_cantidad: { $sum: "$cantidad_disponible" } } }
+]);
+
+
+db.Libros.aggregate([
+  { $group: { _id: null, precio_promedio: { $avg: "$precio" } } }
+]);
+
+db.Libros.aggregate([
+  { $group: { _id: "$genero", precio_promedio: { $avg: "$precio" } } }
+]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
